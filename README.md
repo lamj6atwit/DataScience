@@ -9,7 +9,7 @@ Depending on the season can we determine when coats would be bought the most?
 
 Does the age of the customer influence how much money they would be willing to spend on a single shopping trip?
 
-Did certain payment methods fluctuate during the season?
+Did a good or bad review rating determine how much a customer was willing to spend?
 
 Methods:
 
