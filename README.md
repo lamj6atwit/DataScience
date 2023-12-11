@@ -12,5 +12,37 @@ Does the age of the customer influence how much money they would be willing to s
 Did a good or bad review rating determine how much a customer was willing to spend?
 
 Methods:
+Tools:
+- Numpy, Matplotlib, Seaborn, Pandas, Scipy  
 
 
+
+Discussion:
+    For our first question, we have "Depending on the Season can we determine when coats would be bought the most?".  The data columns used in this code section were not numeric; instead, they consisted of characters. To make the data usable, it was essential to convert these characters into numbers, corresponding to the specific clothing items purchased. This was done by using a mapping directory.
+![image](https://github.com/lamj6atwit/DataScience/assets/90927506/2aa62167-3bd6-4839-abe4-7ee43601ad4d)
+
+This allows us to then put all of the numbers that have been converted into a seperate data frame that can be used for that instance of coding. Then we had to do the same thing for the seasons, and also put all those seperate data values into a seperate data frame. Afterwards we overlayed everything on a count.plot graph inorder to visualize the data. 
+![image](https://github.com/lamj6atwit/DataScience/assets/90927506/2fe45ecd-85aa-44f8-8311-bf4bc50fd289)
+
+   Since this data is not very linear regression friendly as it is not in the form of a scatterplot. Visually we can see that there seems to be a negative correlation in which as the season goes on, coats get bought more in the Spring and Summer more than the Fall and Winter.
+
+   Our next question is "Does the age of the customer influence how much money they would be willing to spend on a single shopping trip?", this was done by putting both the values of the columns into an array. The data did not need much cleaning because the data was both integers and that made the comparison was very easy. 
+![image](https://github.com/lamj6atwit/DataScience/assets/90927506/e8ecac7c-d1fc-4933-a8b1-6c122177788a)
+
+   As we can by the image, the data was very scattered and random. Due to the random generation of the dataset we are unable to see a correlation by the line based on the data alone. If there was a correlation to be found in the dataset it would need to look like the following below. This version of the data has a negative correlation in which as you get older you tend to spend less money on clothes compared to if you are younger.
+![image](https://github.com/lamj6atwit/DataScience/assets/90927506/07741546-ad76-43a2-9fca-a84d6c910084)
+
+   In the last question, we determined if "a good or bad review rating determined how much a customer was willing to spend in a single purchase". Once again in this case the data was very easy to compare as the data was already in order as integers. So none of the data needed changing in order to be overlayed upon each other. As you can see based on the image there is no correlation based off of ratings compared to purchase amounts. 
+![image](https://github.com/lamj6atwit/DataScience/assets/90927506/ccaf5baf-aefa-40cd-9cff-f137553ae87c)
+
+   If there were to be a correlation the data would need to look like this. This image has a postive correlation in which the items with a higher review ratings increases the amount that someone would be willing to spend in a single shopping purchase. 
+![image](https://github.com/lamj6atwit/DataScience/assets/90927506/70c3ee75-2de1-4e60-bff2-3750d3b6a0c5)
+
+
+
+The code that was used to generate a linear regression model for the data that was being used is shown here. 
+![image](https://github.com/lamj6atwit/DataScience/assets/90927506/ee5020d4-f78a-45d7-8ddd-3026d28ecc84)
+
+
+Result:
+    While a significant portion of the data was unable to address the given questions due to its random generation and lack of correlation, or because it was not suitably aligned for a linear regression learning model, I managed to generate visualizations and identify ways to improve further research on the topic. In summary there are no ways based off of this data set to deterine wheather or not there are any correlations for specific points of data and comparisons. Although we are able to visualize afterwords with diagrams how a correlation would be seen and how that would affect the data in order to provide the correlation imagined.
